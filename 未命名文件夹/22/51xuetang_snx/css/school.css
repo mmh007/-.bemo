@@ -1,0 +1,207 @@
+/* 学校库样式 */
+.main-wrapper {
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+  background: #FBFBFB;
+  margin: 0 auto;
+  padding: 80px 0px 0px 0px;
+}
+.main-wrapper .main-contaner {
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+}
+.main-wrapper .main-contaner .main-contaner-module {
+  display: flex;
+  justify-content: space-between;
+}
+/* 左侧模快 */
+.main-contaner .left-module-wrapper {
+  width: 980px;
+  height: auto;
+  margin-top: 20px;
+}
+.left-module-wrapper .module-card-wrapper  {
+  width: 980px;
+  height: auto;
+  background: #ffffff;
+  padding: 16px 0px 16px 0px;
+  border-radius: 6px;
+  border: 1px solid #F1F1F1;
+  overflow: hidden;
+}
+.module-card-wrapper p {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 21px 0px 21px;
+  color: #444444;
+}
+.module-card-wrapper ul {
+  width: 900px;
+  height: auto;
+  line-height: 28px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.left-module-wrapper .module-card-wrapper li {
+  display: inline-block;
+  color: #444444;
+  padding: 0px 9px 0px 18px;
+}
+.left-module-wrapper .module-card-wrapper .select-tag a {
+  color: #FE4C47;
+  border-color: red !important;
+  transition: all .3s ease-in-out;
+  padding: 0px 2px;
+  box-shadow: 0 1px 5px 0 rgba(234,0,0,0.46);
+}
+
+/* 学校模块 */
+.left-module-wrapper .school-wrapper-module {
+  height: 150px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #F1F1F1;
+  border-radius: 6px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+.left-module-wrapper .school-wrapper-module:hover {
+  box-shadow:0px 8px 25px 0px rgba(233,232,232,1);
+  border: 1px solid rgba(241,241,241,1);
+  transition: transform 0.5s ease-in 0s;
+  /* transition: all .3s ease-in-out; */
+  transform: scale(1.05);
+}
+/* 详情学校模块 */
+.school-wrapper-module .particular-card {
+  /* width: 160px; */
+  float: left;
+  padding: 29px 71px 27px 26px;
+  /* border: 1px solid red; */
+}
+.school-wrapper-module .particular-card h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 25px;
+  padding-bottom: 4px;
+}
+.school-wrapper-module .particular-card span {
+  font-size: 14px;
+  line-height: 22px;
+  color: #444444;
+}
+.school-wrapper-module .particular-card p {
+  padding-top: 26px;
+}
+.school-wrapper-module .particular-card a {
+  color: #2D71D9;
+}
+/* 地理位置模块 */
+.school-wrapper-module .location-card {
+  float: left;
+  margin: 104px 0px 24px;
+}
+.location-card img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  padding: 2px 5px 0px 71px;
+  cursor: pointer;
+}
+.location-card p {
+  float: left;
+}
+/* 二维码模块 */
+.left-module-wrapper .two-dimension-card img {
+  float: right;
+  width: 80px;
+  height: 80px;
+  padding: 35px 30px 35px 0px;
+}
+/* 查看更多按钮 */
+.left-module-wrapper .btn-icon button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  color: #FE4C47;
+  border: 1px solid #FE4C47;
+  margin: 30px 425px 39px 434px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* 右侧模快 */
+.main-contaner .right-module-wrapper {
+  /* float: right; */
+  width: 263px;
+  height: auto;
+  margin-top: 20px;
+}
+/* 上层搜索 */
+.right-module-wrapper .search-module {
+  height: 42px;
+  display: inline-block;
+}
+.search-module input{
+  width: 169px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 15px;
+  color: #999999;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid #F1F1F1;
+}
+.search-module button {
+  width: 74px;
+  height: 44px;
+  line-height: 20px;
+  background: #FE4C47;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 6px 6px 0px;
+}
+/* 下层热门 */
+.right-module-wrapper .hot-school {
+  width: 261px;
+  height: auto;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #F1F1F1;
+}
+.hot-school .hot-school-title {
+  padding: 15px 0px 1px 11px;
+}
+.hot-school .hot-school-title img {
+  float: left;
+  width: 22px;
+  height: 22px;
+  padding-right: 5px;
+}
+.hot-school .hot-school-title p {
+  font-size:16px;
+  font-weight:500;
+  line-height:22px;
+  color: #333333;
+}
+.hot-school ul li {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  padding: 0px 0px 13px 18px;
+}
+.hot-school .card {
+  padding-top: 13px;
+}
+.select-tag-botton {
+  padding-bottom: 15px !important;
+}
+.hot-school .select-tag a {
+  color: #FE4C47;
+}

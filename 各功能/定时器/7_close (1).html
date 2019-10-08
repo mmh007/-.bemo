@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>倒计时自动关闭/跳转页面</title>
+<meta charset="utf-8" />
+
+</head>
+<body>
+      <!-- <span id="tu"></span><br> -->
+      <span>5秒种后自动关闭</span><br>
+      <a href="javascript:myClose()">留在本页</a>
+  <script>
+
+    // var i=5;
+	  function aa(){
+      // /*windown.*/close();
+      //var span=document.getElementById("tu");
+      var span=document.body.children[0];
+      var i=parseInt(span.innerHTML);
+      // var n=parseInt(span.innerHTML);
+      i--;
+      if(i==0) close();
+      span.innerHTML=`${i}秒种后自动关闭`
+      // span.innerHTML=i+"秒种后自动关闭";
+    }
+    var n=setInterval(aa,500);
+    function myClose(){
+      clearTimeout(n);
+    }
+    
+  </script>
+</body>
+</html>

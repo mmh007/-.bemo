@@ -1,0 +1,136 @@
+/* 共用样式 */
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+  background: #fff;
+  margin: 0 auto;
+  /* border: 1px solid #293498; */
+}
+/* 共用导航栏 */
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background:#FFFFFF;
+}
+.nav-wrapper .nav-container {
+  width: 1280px;
+  height: 70px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+/* 左侧图标 */
+.nav-container .nav-container-left {
+  float: left;
+  margin: 20px 0px 19px 0px;
+}
+.nav-container .nav-container-left .nav-img-right img {
+  margin-left: 30px;
+}
+.nav-container .nav-container-left .nav-select {
+  position: relative;
+  display: inline-block;
+}
+.nav-container .nav-container-left select {
+  position: absolute;
+  top: -22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav-container .nav-container-left option {
+  padding-bottom: 10px;
+}
+/* 右侧文案 */
+.nav-container .nav-ul-right {
+  float: right;
+  margin: 24px 0px 24px 0px;
+}
+.nav-container .nav-ul-right li {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 0px 0px 50px;
+}
+.nav-container .nav-ul-right li:hover > div {
+  display: block;
+}
+.nav-container .nav-ul-right div {
+  display: none;
+  width: 28px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 6px;
+  background-color: #FE4C47;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+
+/* 公用 footer */
+.footer-wrapper {
+  width: 100%;
+  min-width: 1280px;
+  background: #F4F4F4;
+}
+/* top */
+.footer-wrapper .wrapper-top-card {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-wrapper .wrapper-top-card li {
+  display: inline-block;
+  padding: 45px 50px 2px 45px;
+}
+.footer-wrapper .wrapper-top-card li p {
+  color: #878787;
+}
+.footer-wrapper .wrapper-top-card .li-top-card img {
+  padding: 29px 0px 40px 0px;
+}
+/* bootm */
+.wrapper-bottom-card {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  /* text-align-last: justify; */
+}
+.wrapper-bottom-card .ul-card-bottom {
+  display: inline-block;
+  text-align: left;
+  margin: 30px 90px 17px 90px;
+}
+.wrapper-bottom-card .ul-card-left {
+  float: left;
+  text-align: left;
+  margin: 29px 0px 17px 0px;
+}
+.wrapper-bottom-card .ul-card-right {
+  float: right;
+  margin: 29px 0px 17px 0px;
+}
+.wrapper-bottom-card a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #878787;
+}
+.footer-wrapper hr {
+  height: 1px;
+  color: #EBEBEF;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+/* copyright */
+.wrapper-copyright-card {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-copyright-card p {
+  padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #B2B2B2;
+}

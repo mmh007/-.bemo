@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">获得天气</button>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $("#btn").click(function(){
+            $.ajax({
+                url:"http://localhost:3000",
+                type:"get",
+                //dataType:"jsonp",//上班公司用
+                success:function(res){//匿名
+                    alert(res);
+                }
+            })
+        })
+    </script>
+    
+</body>
+</html>

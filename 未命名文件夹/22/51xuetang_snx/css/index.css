@@ -1,0 +1,229 @@
+/* 共用样式 */
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+  background: #fff;
+  margin: 0 auto;
+}
+/* 共用导航栏 */
+.nav-wrapper {
+  width: 100%;
+  height: 70px;
+  background:rgba(0,0,0,0.1);
+  position: absolute;
+}
+.nav-wrapper .nav-container {
+  width: 1280px;
+  height: 70px;
+  margin: 0 auto;
+}
+/* 左侧图标 */
+.nav-container .nav-container-left {
+  float: left;
+  color: #fff;
+  margin: 20px 0px 19px 0px;
+}
+.nav-container .nav-container-left .nav-img-right img {
+  margin-left: 30px;
+}
+.nav-container .nav-container-left .nav-select {
+  position: relative;
+  display: inline-block;
+}
+.nav-container .nav-container-left select {
+  position: absolute;
+  top: -22px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.nav-container .nav-container-left option {
+  padding-bottom: 10px;
+  background: #706f6f;
+  opacity:0.1;
+}
+/* 右侧文案 */
+.nav-container .nav-ul-right {
+  float: right;
+  margin: 24px 0px 24px 0px;
+}
+.nav-container .nav-ul-right li {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 0px 0px 50px;
+}
+.nav-container .nav-ul-right li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+/* 矩形样式 */
+.nav-container .nav-ul-right li:hover div {
+  display: block;
+}
+.nav-container .nav-ul-right div {
+  display: none;
+  width: 28px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 6px;
+  background-color: #FE4C47;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+/* 背景图片 */
+.backdrop-wrapper {
+  width: 100%;
+  height: 489px;
+  min-width: 1280px;
+  text-align: center;
+  background: url(../img/banner.png) center top no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+.backdrop-wrapper div {
+  position: relative;
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.backdrop-wrapper img {
+  position: absolute;
+  width: 127px;
+  height: 127px;
+  top: 294px;
+  left: 84px;
+}
+.backdrop-wrapper p {
+  position: absolute;
+  color: #fff;
+  top: 420px;
+  left: 84px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+
+/* main body content  /* discuss */
+.discussion-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #F8F8F8;
+}
+.discussion-wrapper .discussion-card {
+  width: 1280px;
+  height: 548px;
+  margin: 0 auto;
+}
+.discussion-wrapper p {
+  font-size: 38px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  padding: 53px 0px 10px 0px;
+}
+.discussion-wrapper .icon-rectangle {
+  width: 56px;
+  height: 4px;
+  background: #FE4C47;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.discussion-wrapper ul {
+  display: inline-block;
+}
+.discussion-wrapper .left-card-img {
+  float: left;
+  margin-top: 19px;
+}
+.discussion-wrapper .right-card-text {
+  position: absolute;
+  padding: 142px 0px 165px 15px;
+}
+.right-card-text .icon-img img {
+  position: relative;
+  top: 10px;
+}
+.right-card-text li span {
+  width: 375px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #333333;
+  margin-left: 8px;
+  text-align: left;
+}
+
+
+/* school */
+.curriculum-wrapper {
+  width: 100%;
+  height: 620px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.curriculum-wrapper .curriculum-module {
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+}
+.curriculum-wrapper .curriculum-module > p {
+  font-size: 38px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.curriculum-wrapper .curriculum-module .icon-rectangle {
+  width: 56px;
+  height: 4px;
+  background: #FE4C47;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.curriculum-module .curriculum-module-wrapper {
+  float: left;
+  display: block;
+  height: auto;
+  margin-top: 97px;
+}
+.curriculum-module-wrapper .module-card {
+  width: 258px;
+  margin-bottom: 50px;
+}
+.curriculum-module-wrapper .module-card img{
+  float: left;
+  width: 64px;
+  height: 64px;
+  padding: 0px 25px 25px 0px;
+}
+.curriculum-module-wrapper .module-card .card-title {
+  height: auto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #333333;
+}
+.curriculum-module-wrapper .module-card > p {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #666666;
+  padding: 6px 6px 0px 89px;
+}
+.curriculum-module .curriculum-module-img {
+  float: right;
+  width: 875px;
+  height: 449px;
+  margin-top: 20px;
+}

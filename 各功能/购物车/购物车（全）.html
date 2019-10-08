@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 800px;
+            margin: 0 auto;
+        }
+        header img{
+            margin: 10px 0;
+        }
+        header nav{
+            margin: 10px 0;
+        }
+        header ul{
+            list-style: none;
+            font-size: 0;
+            width: 100%;
+        }
+        header ul li{
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            width: 160px;
+            background: #ccc;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+        }
+        header ul li:first-child{
+            background: #ff6600;
+        }
+        header ul li:first-child span{
+            background: #ff6600;
+        }
+        header ul li span{
+            position: absolute;
+            top: 2px;
+            right: -10px;
+            width: 16px;
+            height: 16px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotateZ(-45deg);
+            z-index: 1;
+        }
+        table{
+            font-size: 12px;
+            width: 100%;
+        }
+        table tr:first-child{
+            margin-top: 20px;
+        }
+        table tr:nth-child(2n+1) td{
+            background: #e2f2ff;
+            text-align: center;
+        }
+        table tr:nth-child(2n) img{
+            vertical-align: middle;
+        }
+        table .baby .cart-img{
+            margin-top: 5px;
+        }
+        table tr td:nth-child(2){
+            width: 300px;
+        }
+        table .baby .baby-detail{
+            display: inline-block;
+            width: 200px;
+            transform: translateY(-5px);
+            text-align: left;
+        }
+        table .baby .baby-detail p{
+            line-height: 20px;
+        }
+        table tr td input{
+            width: 20px;
+            text-align: center;
+        }
+        table tr .total{
+            font-weight: bold;
+            color: #fe6400;
+            font-size: 14px;
+        }
+        .bottom{
+            display: flex;
+            font-size: 12px;
+            position: relative;
+        }
+        .bottom .left{
+            flex: 1;
+        }
+        .bottom .left .deleteChecked{
+            width: 90px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            background: #f6f6f6;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .bottom .right{
+            flex: 1;
+            text-align: right;
+        }
+
+        .bottom .right .buy{
+            position: absolute;
+            right: 0;
+            width: 80px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #ccc;
+            background: #fe6400;
+            color: #fff;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .bottom span{
+            font-size: 18px;
+            font-weight: bold;
+            color: #fe6400;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="images/taobao_logo.gif">
+            <nav>您的位置：<span><a href="#">首页</a></span> > <span><a href="#">我的淘宝</a></span>>我的购物车</nav>
+            <ul>
+                <li>1.查看购物车<span></span></li>
+                <li>2.确认订单信息<span></span></li>
+                <li>3.付款到支付宝<span></span></li>
+                <li>4.确认收货<span></span></li>
+                <li>5.评价</li>
+            </ul>
+        </header>
+        <table>
+            <tr>
+                <th><input type="checkbox" value="全选">全选</th>
+                <th>商店宝贝</th>
+                <th>获积分</th>
+                <th>单价（元）</th>
+                <th>数量</th>
+                <th>小计（元）</th>
+                <th>操作</th>
+            </tr>
+            <tr class="store-detail" >
+                <td colspan='7'>店铺：<a href="#">纤巧百媚时尚鞋坊</a>卖家：<a href="#">纤巧百媚</a><img src="images/taobao_relation.jpg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td class="baby">
+                    <img class="cart-img" src="images/taobao_cart_01.jpg">
+                    <div class="baby-detail">
+                        <p><a href="#"> 
+                            日韩流行风时尚美眉最爱独特米字拼图金属坡跟公主靴子黑色
+                        </a></p>
+                        <p>颜色：<span>棕色</span> 尺码：<span>37</span></p>
+                        <p>保障：<img src="images/taobao_icon_01.jpg"></p>
+                    </div>
+                </td>
+                <td class="integral">5</td>
+                <td class="univalent">138.00</td>
+                <td>
+                    <img class="reduce" src="images/taobao_minus.jpg">
+                    <input type="text" value="1" readonly>
+                    <img class="add" src="images/taobao_adding.jpg">
+                </td>
+                <td class="total">138</td>
+                <td><a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr class="store-detail" >
+                <td colspan='7'>店铺：<a href="#">香港我的美丽日记</a>卖家：<a href="#">lokemick2009</a><img src="images/taobao_relation.jpg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td class="baby">
+                    <img class="cart-img" src="images/taobao_cart_02.jpg">
+                    <div class="baby-detail">
+                        <p><a href="#"> 
+                            chanel/香奈尔/香奈尔炫亮魅力唇膏3.5g
+                        </a></p>
+                        <p>保障：<img src="images/taobao_icon_01.jpg"><img src="images/taobao_icon_02.jpg"></p>
+                    </div>
+                </td>
+                <td class="integral">12</td>
+                <td class="univalent">265.00</td>
+                <td>
+                    <img class="reduce" src="images/taobao_minus.jpg">
+                    <input type="text" value="1" readonly>
+                    <img class="add" src="images/taobao_adding.jpg">
+                </td>
+                <td class="total">265</td>
+                <td><a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr class="store-detail" >
+                <td colspan='7'>店铺：<a href="#">实体经营 </a>卖家：<a href="#">林颜店铺</a><img src="images/taobao_relation.jpg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td class="baby">
+                    <img class="cart-img" src="images/taobao_cart_03.jpg">
+                    <div class="baby-detail">
+                        <p><a href="#"> 
+                            蝶妆海晳蓝清滢粉底液10#（象牙白）
+                        </a></p>
+                        <p>
+                            保障：<img src="images/taobao_icon_01.jpg">
+                            <img src="images/taobao_icon_02.jpg">
+                        </p>
+                    </div>
+                </td>
+                <td class="integral">3</td>
+                <td class="univalent">85.00</td>
+                <td>
+                    <img class="reduce" src="images/taobao_minus.jpg">
+                    <input type="text" value="1" readonly>
+                    <img class="add" src="images/taobao_adding.jpg">
+                </td>
+                <td class="total">85</td>
+                <td><a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr class="store-detail" >
+                <td colspan='7'>店铺：<a href="#">红豆豆的小屋</a>卖家：<a href="#"> taobao豆豆</a><img src="images/taobao_relation.jpg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td class="baby">
+                    <img class="cart-img" src="images/taobao_cart_04.jpg">
+                    <div class="baby-detail">
+                        <p><a href="#"> 
+                            相宜促销专供 大S推荐 最好用的LilyBell化妆棉
+                        </a></p>
+                        <p>保障：<img src="images/taobao_icon_01.jpg"></p>
+                    </div>
+                </td>
+                <td class="integral">12</td>
+                <td class="univalent">12.00</td>
+                <td>
+                    <img class="reduce" src="images/taobao_minus.jpg">
+                    <input type="text" value="2" readonly>
+                    <img class="add" src="images/taobao_adding.jpg">
+                </td>
+                <td class="total">24</td>
+                <td><a href="#" class="delete">删除</a></td>
+            </tr>
+        </table>
+        <div class="bottom">
+            <div class="left">
+                <p class="deleteChecked"><a href="#">删除所选</a></p>
+            </div>
+            <div class="right">
+                <p>商品总价（不含运费）： <span class="totalPrice">512</span> 元</p>
+                <p>可获积分： <span class="totalIntegral">44</span> 点</p>
+                <p class="buy"><a href="index.html">立即购买</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script>
+        //多选框
+        $('th input:checkbox').click(function() {
+            if ($(this).prop('checked')) {
+                $('td input:checkbox').each(function(index,item){
+                    $(item).prop('checked', true)
+                })
+            } else {
+                $('td input:checkbox').each(function(index,item){
+                    $(item).prop('checked', false)
+                })
+            }
+        });
+        $('td input:checkbox').click(function(){
+            $('th input:checkbox').prop("checked",$('td input:checkbox').length==$('td input:checkbox:checked').length)
+        })
+        //增加
+        var num =1;
+        $('.add').click(function() {
+            num = $(this).siblings('input').val()
+            num++;
+            $(this).siblings('input').val(num);
+            //单个总价
+            var univalent = $(this).parent().siblings('.univalent').html();
+            // console.log(univalent);
+            $(this).parent().siblings('.total').html(univalent*num);
+            update();
+        });
+        //减小
+        $('.reduce').click(function() {
+            num = $(this).siblings('input').val();
+            if (num>1) {
+                num--;
+                $(this).siblings('input').val(num);
+                var univalent = $(this).parent().siblings('.univalent').html();
+                $(this).parent().siblings('.total').html(univalent*num);
+                update();
+            }else{
+                alert('宝贝必须大于0的')
+            }
+        });
+        //删除
+        $('.delete').click(function() {
+            console.log($(this).parent().parent())
+            $(this).parent().parent().prev().remove();
+            $(this).parent().parent().remove();
+            update();
+        });
+        //删除被选中的
+        $('.deleteChecked').click(function() {
+            $("input:checkbox:checked").parent().parent().prev().remove();
+            $("input:checkbox:checked").parent().parent().remove();
+            update();
+        });
+        //更新价格和积分
+        function update(){
+            //总价
+            var totalPrice = 0;
+            $('.total').each(function(index, el) {
+                totalPrice += Number($(el).html());
+            });
+            // console.log(totalPrice);
+            $('.totalPrice').html(totalPrice);
+            //积分
+            var totalIntegral = 0;
+            $('.integral').each(function(index, el) {
+                totalIntegral += Number($(el).html()*$('td input:text').eq(index).val());
+                console.log($('td input:text').eq(index).val());
+            });
+            $('.totalIntegral').html(totalIntegral);
+        }
+    </script>
+</body>
+</html>
